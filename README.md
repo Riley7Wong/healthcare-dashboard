@@ -24,3 +24,28 @@ This project aims to build a secure, user-friendly dashboard to manage healthcar
    - Implement Identity and Access Management (IAM) with Role-Based Access Control (RBAC) - e.g., administrator, clinician, auditor
    - Enforce strong password authentication with secure password policies to ensure only authorised users can access the system
    - Encrypt data at rest and during transmission using AES-256 encryption and TLS protocols to protect confidentiality and integrity
+
+## Scope
+
+- **Data Anonymisation**
+  - Automatic anonymisation of PII and PHI
+  - Basic GDPR compliance
+
+- **Role-Based Access Control**
+  - Four predefined roles:
+    - Clinician
+    - Administrator
+    - Auditor
+    - Super Admin
+  - Authentication with secure password policies
+
+- **Breach Detection & Logging**
+  - Logging of data access events
+  - Detection and flagging of suspicious activities
+
+- **Encryption**
+  - AES-256 encryption at rest
+  - TLS encryption in transit
+
+- **Dashboard Interface**
+   - Basic React dashboard displaying anonymised data and alerts updated in near real-time
