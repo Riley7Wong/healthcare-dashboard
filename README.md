@@ -86,13 +86,14 @@ For detailed user stories, see [User Stories](docs/user-stories.md)
 
 ## Deliverables
 
-- **Code Repository**
-  - Complete source code (backend, frontend, database)
-  - README with overview, setup instructions, and documentation links
-  - Deployed prototype accessible via public URL
-  - Secure login and authentication with role-based access control
-  - Dashboard displaying anonymised data and breach detection alerts updated in near real-time
-  - Manual test cases covering authentication, data anonymisation, and breach detection
-  - Screenshots of login screens, dashboard, and alerts
-  - Example logs and output samples
-  - GDPR compliance notes on anonymisation, logging, and data retention policies
+- Complete source code (backend, frontend, database)
+- README with overview, setup instructions, and documentation links
+- UML diagrams illustrating system architecture and user interactions
+- Threat model documentation covering potential risks and mitigations
+- Secure login and authentication with role-based access control
+- Manual test cases covering authentication, data anonymisation, and breach detection
+- Deployed prototype accessible via public URL
+- Dashboard displaying anonymised data and breach detection alerts updated in near real-time
+- Screenshots of login screens, dashboard, and alerts
+- Example logs and output samples
+- GDPR compliance notes on anonymisation, logging, and data retention policies
