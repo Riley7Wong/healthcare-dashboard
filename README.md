@@ -81,3 +81,18 @@ User stories outline the functional needs of each role to guide development:
 - All users require secure authentication and password management
 
 For detailed user stories, see [User Stories](docs/user-stories.md)
+
+---
+
+## Deliverables
+
+- **Code Repository**
+  - Complete source code (backend, frontend, database)
+  - README with overview, setup instructions, and documentation links
+  - Deployed prototype accessible via public URL
+  - Secure login and authentication with role-based access control
+  - Dashboard displaying anonymised data and breach detection alerts updated in near real-time
+  - Manual test cases covering authentication, data anonymisation, and breach detection
+  - Screenshots of login screens, dashboard, and alerts
+  - Example logs and output samples
+  - GDPR compliance notes on anonymisation, logging, and data retention policies
