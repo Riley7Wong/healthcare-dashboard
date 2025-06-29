@@ -88,8 +88,8 @@ For detailed user stories, see [User Stories](docs/user-stories.md)
 
 - Complete source code (backend, frontend, database)
 - README with overview, setup instructions, and documentation links
+- Threat model covering potential risks and mitigations
 - UML diagrams illustrating system architecture and user interactions
-- Threat model documentation covering potential risks and mitigations
 - Secure login and authentication with role-based access control
 - Manual test cases covering authentication, data anonymisation, and breach detection
 - Deployed prototype accessible via public URL
@@ -97,3 +97,51 @@ For detailed user stories, see [User Stories](docs/user-stories.md)
 - Screenshots of login screens, dashboard, and alerts
 - Example logs and output samples
 - GDPR compliance notes on anonymisation, logging, and data retention policies
+
+---
+
+## Threat Model
+This identifies potential security threats and suggests possible mitigation strategies
+
+- Assets
+
+   - **Patient Healthcare Data (PII/PHI)**
+   - **User Credentials and Authentication Tokens**
+   - **System Logs and Alerts**
+   - **Dashboard Interface and APIs**
+
+- Threats
+   - **Unauthorized Access**: Attackers gain access via weak authentication or compromised credentials
+   - **Data Leakage**: Exposure of PII/PHI due to insufficient anonymisation or data breaches
+   - **Insider Threats**: Malicious or careless insiders accessing data beyond their permissions
+   - **Replay Attacks**: Reuse of captured authentication tokens or forged requests
+   - **Man-in-the-Middle (MITM)**: Intercepted communications if encryption is not enforced
+   - **Denial of Service (DoS)**: Overloading the system to disrupt availability
+   - **Data Retention Risks**: Data kept longer than needed increases exposure and compliance issues
+   - **Weak Audit Trails**: Logs that can be tampered with or are incomplete reduce the ability to detect breaches
+   - **Misconfiguration**: Errors in IAM settings, encryption policies, or breach detection thresholds may create security gaps
+
+- Mitigations
+   - **Access Controls**
+     - Role-Based Access Control (RBAC) to restrict access by role
+     - Secure authentication with strong password policies
+   - **Encryption**
+     - AES-256 encryption at rest
+     - TLS encryption for all communications
+   - **Anonymisation**
+     - Strict anonymisation before storing or displaying patient data
+   - **Session Security**
+     - Token expiration and secure session handling to reduce replay risk
+   - **Audit and Logging**
+     - Immutable logs with timestamps and user identifiers
+     - Near real-time alerting on suspicious activities
+   - **Availability Protections**
+     - Rate limiting and monitoring to detect and mitigate DoS attempts
+   - **Retention Policies**
+     - Enforced data retention schedules and automated secure deletion of outdated data and logs
+   - **Configuration Controls**
+     - Regular reviews of IAM roles, encryption settings, and detection parameters
+
+- Residual Risks
+   - Zero-day vulnerabilities in dependencies or libraries
+   - Human error during configuration, monitoring, or response
