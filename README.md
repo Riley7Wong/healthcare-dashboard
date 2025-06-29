@@ -69,16 +69,14 @@ The system defines the following user roles, each with specific permissions:
 
 For detailed role descriptions, see [User Roles & Definitions](docs/user-roles.md).
 
----
-
 ## User Stories
 User stories outline the functional needs of each role to guide development:
 
-- Clinicians need to view anonymised data and receive alerts
-- Administrators monitor logs and manage users
-- Auditors review historical logs for compliance
-- Super Admins configure security policies and manage roles
-- All users require secure authentication and password management
+- **Clinicians** need to view anonymised data and receive alerts
+- **Administrators** monitor logs and manage users
+- **Auditors** review historical logs for compliance
+- **Super Admins** configure security policies and manage roles
+- **All users** require secure authentication and password management
 
 For detailed user stories, see [User Stories](docs/user-stories.md)
 
@@ -86,31 +84,31 @@ For detailed user stories, see [User Stories](docs/user-stories.md)
 
 ## Deliverables
 
-- Complete source code (backend, frontend, database)
-- README with overview, setup instructions, and documentation links
-- Threat model covering potential risks and mitigations
-- UML diagrams illustrating system architecture and user interactions
-- Secure login and authentication with role-based access control
-- Manual test cases covering authentication, data anonymisation, and breach detection
-- Deployed prototype accessible via public URL
-- Dashboard displaying anonymised data and breach detection alerts updated in near real-time
-- Screenshots of login screens, dashboard, and alerts
-- Example logs and output samples
-- GDPR compliance notes on anonymisation, logging, and data retention policies
+- **Complete source code** (backend, frontend, database)
+- **README** with overview, setup instructions, and documentation links
+- **Threat model** covering potential risks and mitigations
+- **UML diagrams** illustrating system architecture and user interactions
+- **Secure login and authentication** with role-based access control
+- **Manual test cases** covering authentication, data anonymisation, and breach detection
+- **Deployed prototype** accessible via public URL
+- **Dashboard displaying anonymised data and breach detection alerts updated in near real-time**
+- **Screenshots of login screens, dashboard, and alerts**
+- **Example logs and output samples**
+- **GDPR compliance notes on anonymisation, logging, and data retention policies**
 
 ---
 
 ## Threat Model
 This identifies potential security threats and suggests possible mitigation strategies
 
-- Assets
+- **Assets**
 
    - **Patient Healthcare Data (PII/PHI)**
    - **User Credentials and Authentication Tokens**
    - **System Logs and Alerts**
    - **Dashboard Interface and APIs**
 
-- Threats
+- **Threats**
    - **Unauthorized Access**: Attackers gain access via weak authentication or compromised credentials
    - **Data Leakage**: Exposure of PII/PHI due to insufficient anonymisation or data breaches
    - **Insider Threats**: Malicious or careless insiders accessing data beyond their permissions
@@ -121,7 +119,7 @@ This identifies potential security threats and suggests possible mitigation stra
    - **Weak Audit Trails**: Logs that can be tampered with or are incomplete reduce the ability to detect breaches
    - **Misconfiguration**: Errors in IAM settings, encryption policies, or breach detection thresholds may create security gaps
 
-- Mitigations
+- **Mitigations**
    - **Access Controls**
      - Role-Based Access Control (RBAC) to restrict access by role
      - Secure authentication with strong password policies
@@ -142,6 +140,6 @@ This identifies potential security threats and suggests possible mitigation stra
    - **Configuration Controls**
      - Regular reviews of IAM roles, encryption settings, and detection parameters
 
-- Residual Risks
-   - Zero-day vulnerabilities in dependencies or libraries
-   - Human error during configuration, monitoring, or response
+- **Residual Risks**
+   - **Zero-day vulnerabilities** in dependencies or libraries
+   - **Human error** during configuration, monitoring, or response
