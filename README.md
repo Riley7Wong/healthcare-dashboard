@@ -27,6 +27,7 @@ This project aims to build a secure, user-friendly dashboard to manage healthcar
 3. **Security by Design**
    - Implement Identity and Access Management (IAM) with Role-Based Access Control (RBAC) - e.g., administrator, clinician, auditor
    - Enforce strong password authentication with secure password policies to ensure only authorised users can access the system
+   - Store password using salted one-way hashing to protect credentials in the event of a breach from original passwords direct exposure
    - Encrypt data at rest and during transmission using AES-256 encryption and TLS protocols to protect confidentiality and integrity
 
 ---
