@@ -11,3 +11,5 @@
 | 2025-07-02 | Drafted class diagram UML           | Checking if diagram updated with salt hash  |
 | 2025-07-03 | Updated class UML draft and readme  | Importing class UML; prepare sequence UML   |
 | 2025-07-04 | Importing class UML                 | Drafting sequence UML segregate by actions  |
+| 2025-07-05 | Preparing future development docs   | Revising class and sequence UML             |
+| 2025-07-06 | Drafting design decision docs       | Finialise all UML                           |
