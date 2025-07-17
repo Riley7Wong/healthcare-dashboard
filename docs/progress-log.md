@@ -13,3 +13,4 @@
 | 2025-07-04 | Importing class UML                 | Drafting sequence UML segregate by actions  |
 | 2025-07-05 | Preparing future development docs   | Revising class and sequence UML             |
 | 2025-07-06 | Drafting design decision docs       | Finialise all UML                           |
+| 2025-07-17 | Revised progress and possible dev   | Completing class and sequence UML           |
