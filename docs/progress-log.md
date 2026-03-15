@@ -14,3 +14,4 @@
 | 2025-07-05 | Preparing future development docs   | Revising class and sequence UML             |
 | 2025-07-06 | Drafting design decision docs       | Finialise all UML                           |
 | 2025-07-17 | Revised progress and possible dev   | Completing class and sequence UML           |
+| 2026-03-15 | Resumed project                     | Sequence UML as Phase 1 design completion   |
